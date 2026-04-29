@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Wanderlust India. We're here to help plan your dream vacation." />
+  <title>Contact Us | Wanderlust India</title>
+
+  <!-- GA4 Tracking — REPLACE G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-particles"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">✈</span>
+        <span>Wanderlust</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="section-title">Contact Us</h1>
+      <p class="section-subtitle">Have a question or need help planning? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT CONTENT ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info Column -->
+        <div class="contact-info-list animate-in">
+          <div class="contact-info-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@wanderlustindia.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>42 Travel Lane, Connaught Place,<br/>New Delhi 110001, India</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Sat: 9:00 AM – 7:00 PM<br/>Sun: 10:00 AM – 4:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="form-container animate-in">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Your Name *</label>
+              <input type="text" id="contact-name" name="name" placeholder="Enter your name" required />
+              <span class="form-error">Name is required</span>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address *</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required />
+              <span class="form-error">Valid email is required</span>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject *</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="How can we help?" required />
+              <span class="form-error">Subject is required</span>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" placeholder="Write your message here..." required></textarea>
+              <span class="form-error">Message is required</span>
+            </div>
+            <button type="submit" class="btn btn-primary" id="contact-submit" style="width:100%; justify-content:center;">
+              Send Message →
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Wanderlust India. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="booking.html">Book Now</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wanderlust India – Discover India's most breathtaking destinations. Book curated travel packages to Goa, Manali, Kerala and more." />
+  <title>Wanderlust India | Explore Incredible Destinations</title>
+
+  <!-- ============================================
+       GA4 Google Analytics Tracking Script
+       *** REPLACE G-XXXXXXXXXX with your real Measurement ID ***
+       ============================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+    /* GA4 will automatically track page_view events with this config */
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient background glow -->
+  <div class="bg-particles"></div>
+
+  <!-- ========== NAVIGATION BAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">✈</span>
+        <span>Wanderlust</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('images/hero.png');"></div>
+    <div class="hero-content">
+      <span class="hero-badge">🌏 #1 Travel Agency</span>
+      <h1>Discover the <span class="highlight">Magic of India</span></h1>
+      <p>From sun-kissed beaches to snow-capped mountains — explore curated journeys crafted for the modern traveller.</p>
+      <div class="hero-buttons">
+        <a href="destinations.html" class="btn btn-primary btn-book-now">Explore Destinations →</a>
+        <a href="booking.html" class="btn btn-secondary">Plan Your Trip</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS / TRUST SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item animate-in">
+          <div class="stat-icon">🗺️</div>
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Destinations</div>
+        </div>
+        <div class="stat-item animate-in">
+          <div class="stat-icon">😊</div>
+          <div class="stat-number">12K+</div>
+          <div class="stat-label">Happy Travellers</div>
+        </div>
+        <div class="stat-item animate-in">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-number">4.9</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+        <div class="stat-item animate-in">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Years of Trust</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED DESTINATIONS ========== -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <h2 class="section-title">Trending Destinations</h2>
+      <p class="section-subtitle">Hand-picked experiences that our travellers love the most this season.</p>
+
+      <div class="cards-grid">
+        <!-- Card 1: Goa -->
+        <div class="card animate-in" id="card-goa">
+          <div class="card-image">
+            <img src="images/goa.png" alt="Goa Beach at Sunset" loading="lazy" />
+            <span class="card-tag">🔥 Popular</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Goa</h3>
+            <div class="card-location">📍 West Coast, India</div>
+            <p class="card-desc">Sun, sand, and vibrant nightlife — Goa is India's ultimate beach paradise with Portuguese heritage charm.</p>
+            <div class="card-footer">
+              <div class="card-price">₹12,999 <small>/person</small></div>
+              <a href="booking.html?dest=goa" class="btn btn-primary btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Manali -->
+        <div class="card animate-in" id="card-manali">
+          <div class="card-image">
+            <img src="images/manali.png" alt="Manali Snow Mountains" loading="lazy" />
+            <span class="card-tag">❄️ Adventure</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Manali</h3>
+            <div class="card-location">📍 Himachal Pradesh, India</div>
+            <p class="card-desc">Snow-draped peaks, pine forests, and thrilling treks — Manali is a mountain lover's dream come true.</p>
+            <div class="card-footer">
+              <div class="card-price">₹15,499 <small>/person</small></div>
+              <a href="booking.html?dest=manali" class="btn btn-primary btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Kerala -->
+        <div class="card animate-in" id="card-kerala">
+          <div class="card-image">
+            <img src="images/kerala.png" alt="Kerala Backwaters Houseboat" loading="lazy" />
+            <span class="card-tag">🌿 Serene</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kerala</h3>
+            <div class="card-location">📍 South India</div>
+            <p class="card-desc">Houseboat cruises through emerald backwaters, spice plantations, and Ayurvedic wellness retreats await.</p>
+            <div class="card-footer">
+              <div class="card-price">₹18,999 <small>/person</small></div>
+              <a href="booking.html?dest=kerala" class="btn btn-primary btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box animate-in">
+        <h2>Ready for Your Next Adventure?</h2>
+        <p>Let us plan the perfect getaway — tailored just for you.</p>
+        <a href="booking.html" class="btn btn-primary btn-book-now">Start Planning →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Wanderlust India. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="booking.html">Book Now</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

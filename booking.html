@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book your dream trip to Goa, Manali, Kerala and more. Simple booking form with instant confirmation." />
+  <title>Book Your Trip | Wanderlust India</title>
+
+  <!-- GA4 Tracking — REPLACE G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-particles"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">✈</span>
+        <span>Wanderlust</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="booking.html" class="active">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="section-title">Book Your Trip</h1>
+      <p class="section-subtitle">Fill in the details below and we'll craft your perfect getaway.</p>
+    </div>
+  </section>
+
+  <!-- ========== BOOKING FORM ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="form-container animate-in">
+        <form id="booking-form" novalidate>
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+            <span class="form-error">Full Name is required</span>
+          </div>
+
+          <!-- Email & Phone in a row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="form-error">Valid email is required</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" />
+              <span class="form-error"></span>
+            </div>
+          </div>
+
+          <!-- Destination Select -->
+          <div class="form-group">
+            <label for="destination">Choose Destination *</label>
+            <select id="destination" name="destination" required>
+              <option value="">— Select a destination —</option>
+              <option value="goa">Goa — Beach Paradise</option>
+              <option value="manali">Manali — Mountain Adventure</option>
+              <option value="kerala">Kerala — Backwater Bliss</option>
+            </select>
+            <span class="form-error">Please select a destination</span>
+          </div>
+
+          <!-- Travel Date & Guests -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="travel-date">Travel Date *</label>
+              <input type="date" id="travel-date" name="travel-date" required />
+              <span class="form-error">Travel date is required</span>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+          </div>
+
+          <!-- Special Requests -->
+          <div class="form-group">
+            <label for="message">Special Requests</label>
+            <textarea id="message" name="message" placeholder="Any special requirements or preferences..."></textarea>
+            <span class="form-error"></span>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-book-now" id="booking-submit" style="width:100%; justify-content:center;">
+            Confirm Booking →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Wanderlust India. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="booking.html">Book Now</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Auto-select destination from URL query param (e.g. ?dest=goa) -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const dest = params.get('dest');
+    if (dest) {
+      const select = document.getElementById('destination');
+      if (select) select.value = dest;
+    }
+  </script>
+</body>
+</html>

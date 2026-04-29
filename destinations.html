@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse all destinations – Goa beaches, Manali mountains, Kerala backwaters and more curated travel experiences." />
+  <title>Destinations | Wanderlust India</title>
+
+  <!-- GA4 Tracking — REPLACE G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-particles"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">✈</span>
+        <span>Wanderlust</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="section-title">All Destinations</h1>
+      <p class="section-subtitle">Explore our complete collection of handcrafted travel experiences across India.</p>
+    </div>
+  </section>
+
+  <!-- ========== DESTINATIONS GRID ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cards-grid">
+
+        <!-- Goa -->
+        <div class="card animate-in" id="dest-goa">
+          <div class="card-image">
+            <img src="images/goa.png" alt="Goa Beach at Sunset" loading="lazy" />
+            <span class="card-tag">🔥 Popular</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Goa</h3>
+            <div class="card-location">📍 West Coast, India</div>
+            <p class="card-desc">Golden beaches, Portuguese churches, vibrant flea markets, and legendary nightlife make Goa the ultimate coastal escape.</p>
+            <div class="card-footer">
+              <div class="card-price">₹12,999 <small>/person</small></div>
+              <a href="booking.html?dest=goa" class="btn btn-primary btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manali -->
+        <div class="card animate-in" id="dest-manali">
+          <div class="card-image">
+            <img src="images/manali.png" alt="Manali Snow Mountains" loading="lazy" />
+            <span class="card-tag">❄️ Adventure</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Manali</h3>
+            <div class="card-location">📍 Himachal Pradesh, India</div>
+            <p class="card-desc">Trek through Solang Valley, ski on Rohtang Pass, and unwind in hot springs surrounded by towering Himalayan peaks.</p>
+            <div class="card-footer">
+              <div class="card-price">₹15,499 <small>/person</small></div>
+              <a href="booking.html?dest=manali" class="btn btn-primary btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kerala -->
+        <div class="card animate-in" id="dest-kerala">
+          <div class="card-image">
+            <img src="images/kerala.png" alt="Kerala Backwaters" loading="lazy" />
+            <span class="card-tag">🌿 Serene</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kerala</h3>
+            <div class="card-location">📍 South India</div>
+            <p class="card-desc">Glide through tranquil backwaters on a traditional houseboat, explore tea plantations, and rejuvenate with Ayurveda.</p>
+            <div class="card-footer">
+              <div class="card-price">₹18,999 <small>/person</small></div>
+              <a href="booking.html?dest=kerala" class="btn btn-primary btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box animate-in">
+        <h2>Can't Decide? Let Us Help!</h2>
+        <p>Our travel experts will craft the perfect itinerary based on your preferences.</p>
+        <a href="contact.html" class="btn btn-primary">Talk to an Expert →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Wanderlust India. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="booking.html">Book Now</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
